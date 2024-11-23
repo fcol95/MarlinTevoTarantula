@@ -1,3 +1,11 @@
+# Tevo Tarantula 3D Printer Marlin Firmware
+Customised version of Marlin v2.0.7.4 firmware for Tevo Tarantula 3D Printer.
+Config for stock printer with MKS Gen 1.4 controller.
+Inspiration from https://github.com/raphaelbruno/marlin-firmware-configuration/tree/master configuration, with his modifications removed and some settings ajusted to work with standard Tarantula.
+Inspiration and confirmation of Raphael's config done with Jim Brown's Marlin bugfix 2.0.x config (MarlinTarantula-EasyConfig-2.0.x). 
+
+Original Marlin's readme below:
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
@@ -38,8 +46,6 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
   [SAMD51P20A](https://www.adafruit.com/product/4064)|ARM® Cortex-M4|Adafruit Grand Central M4
   [Teensy 3.5](https://www.pjrc.com/store/teensy35.html)|ARM® Cortex-M4|
   [Teensy 3.6](https://www.pjrc.com/store/teensy36.html)|ARM® Cortex-M4|
-  [Teensy 4.0](https://www.pjrc.com/store/teensy40.html)|ARM® Cortex-M7|
-  [Teensy 4.1](https://www.pjrc.com/store/teensy41.html)|ARM® Cortex-M7|
 
 ## Submitting Changes
 
