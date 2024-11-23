@@ -1,3 +1,11 @@
+# Tevo Tarantula 3D Printer Marlin Firmware
+Customised version of Marlin v2.0.6.2 firmware for Tevo Tarantula 3D Printer.
+Config for stock printer with MKS Gen 1.4 controller.
+Inspiration from https://github.com/raphaelbruno/marlin-firmware-configuration/tree/master configuration, with his modifications removed and some settings ajusted to work with standard Tarantula.
+Inspiration and confirmation of Raphael's config done with Jim Brown's Marlin bugfix 2.0.x config (MarlinTarantula-EasyConfig-2.0.x). 
+
+Original Marlin's readme below:
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
