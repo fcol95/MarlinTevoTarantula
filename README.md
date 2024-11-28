@@ -3,8 +3,9 @@ Customised version of Marlin v2.0.7.4 firmware for Tevo Tarantula 3D Printer.
 Config for stock printer with MKS Gen 1.4 controller with following modifications:
 1. Hot end replaced with: 12V 40W HICTOP Assembled Extruder 1.75mm filament, 0.4mm nozzle (amazon.ca/gp/product/B015W1VEVU).
 2. Extruder replaced with: Redrex Dual Gear Ender 3 Extruder (amazon.ca/dp/B09H6T3NNT).
-3. Added filament runout sensor (low when NO filament): Anycubic Mega X Filament Sensor Ender 3 (amazon.ca/dp/B0BZ9NQ562). CONFIG UPDATE TODO!
-4. Added inductive proximity bed level sensor (low when proximity detected): SN04-N (https://www.aliexpress.com/item/32866243747.html). CONFIG UPDATE TODO!
+3. Added filament runout sensor (low when NO filament): Anycubic Mega X Filament Sensor Ender 3 (amazon.ca/dp/B0BZ9NQ562). Connected to Z+.
+4. Added inductive proximity bed level sensor (low when proximity detected): SN04-N (https://www.aliexpress.com/item/32866243747.html). Connected to X+.
+5. Hot end fan duct and inductive proximity sensor (SN04-N) 3d printed bracket installed: https://www.thingiverse.com/thing:1809465.
 5. Added 0.03" thick PEI sheet on heated bed (amazon.ca/dp/B0013HKZTA).
 6. Replaced bowden extruder feed with PTFE tubing 2mm ID 4mm OD (amazon.ca/dp/B00ID7E5VM).
 7. Added linear guide for x and y axis (MGN12 - 400mm and 250mm).
