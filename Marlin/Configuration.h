@@ -849,7 +849,7 @@
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-//#define USE_PROBE_FOR_Z_HOMING
+#define USE_PROBE_FOR_Z_HOMING
 
 /**
  * Z_MIN_PROBE_PIN
@@ -991,7 +991,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -2.0 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor
+#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -1.30 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
