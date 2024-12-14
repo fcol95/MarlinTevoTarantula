@@ -7,11 +7,15 @@ Config for stock printer with MKS Gen 1.4 controller with following modification
 3. Added filament runout sensor (low when NO filament): Anycubic Mega X Filament Sensor Ender 3 (amazon.ca/dp/B0BZ9NQ562). Connected to Z+.
 4. Added inductive proximity bed level sensor (low when proximity detected): SN04-N (https://www.aliexpress.com/item/32866243747.html). Connected to X+.
 5. Hot end fan duct and inductive proximity sensor (SN04-N) 3d printed bracket installed: https://www.thingiverse.com/thing:1809465.
-5. Removed Tarantula bed sticker and replaced with IdeaFormer-3D magnetic bed sticker with removable PET+PEI magnetic steel plate 220x220mm (amazon.ca/dp/B0BG6T7N95).
-6. Replaced bowden extruder feed with PTFE tubing 2mm ID 4mm OD (amazon.ca/dp/B00ID7E5VM).
-7. Added linear guide for x and y axis (MGN12 - 400mm and 250mm).
-8. Original plastic brackets and parts replaced with aluminum parts.
-7. Mounted on a wooden base with 3D printed brackets.
+6. Removed Tarantula bed sticker and replaced with IdeaFormer-3D magnetic bed sticker with removable PET+PEI magnetic steel plate 220x220mm (amazon.ca/dp/B0BG6T7N95).
+7. Replaced bowden extruder feed with PTFE tubing 2mm ID 4mm OD (amazon.ca/dp/B00ID7E5VM).
+8. Added linear guide for x and y axis (MGN12 - 400mm and 250mm).
+9. Original plastic brackets and parts replaced with aluminum parts.
+10. Mounted on a wooden base with 3D printed brackets.
+11. Added second z-axis stepper setup:
+11.1. 1x SIMAX3D Nema 17 Stepper Motor 42x40 (https://www.amazon.ca/dp/B0CKYLC7P2).
+11.2. 1x 350mm TR8x2 lead screw with T8 brass nut (acme thread, 2mm pitch, 1 start, 2mm lead) (https://www.amazon.ca/dp/B08JLMF16R).
+11.3. 1x AFUNTA Flexible Couplings 5mm to 8mm Compatible with NEMA 17 Stepper Motors. Coupler diameter 19mm x height 25mm. (https://www.amazon.ca/dp/B07JL1QYLS).
 
 Inspiration from https://github.com/raphaelbruno/marlin-firmware-configuration/tree/master configuration, with his modifications removed and some settings ajusted to work with standard Tarantula.
 Inspiration and confirmation of Raphael's config done with Jim Brown's Marlin bugfix 2.0.x config (MarlinTarantula-EasyConfig-2.0.x). 
