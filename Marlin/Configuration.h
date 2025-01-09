@@ -1200,7 +1200,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.14, 78.75, 1620.72, 148.24 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.14, 78.75, 1596.77, 148.24 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1515,7 +1515,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.815 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed
+#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.846 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
