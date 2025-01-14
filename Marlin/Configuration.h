@@ -1292,7 +1292,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.14, 78.75, 1596.77, 148.24 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.63, 1599.17, 148.24 }
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
  */
