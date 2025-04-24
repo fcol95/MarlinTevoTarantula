@@ -737,12 +737,21 @@
 
   #define MPC_INCLUDE_FAN                             // Model the fan speed?
 
+  // 0.4mm Brass Nozzle
   // Measured physical constants from M306
-  #define MPC_BLOCK_HEAT_CAPACITY { 11.68f }           // (J/K) Heat block heat capacities.
-  #define MPC_SENSOR_RESPONSIVENESS { 0.1118f }         // (K/s per ∆K) Rate of change of sensor temperature from heat block.
-  #define MPC_AMBIENT_XFER_COEFF { 0.0777f }           // (W/K) Heat transfer coefficients from heat block to room air with fan off.
+  // #define MPC_BLOCK_HEAT_CAPACITY { 11.68f }           // (J/K) Heat block heat capacities.
+  // #define MPC_SENSOR_RESPONSIVENESS { 0.1118f }         // (K/s per ∆K) Rate of change of sensor temperature from heat block.
+  // #define MPC_AMBIENT_XFER_COEFF { 0.0777f }           // (W/K) Heat transfer coefficients from heat block to room air with fan off.
+  // #if ENABLED(MPC_INCLUDE_FAN)
+  //   #define MPC_AMBIENT_XFER_COEFF_FAN255 { 0.1215f }  // (W/K) Heat transfer coefficients from heat block to room air with fan on full.
+  // #endif
+
+  // 0.2mm Brass Nozzle
+  #define MPC_BLOCK_HEAT_CAPACITY { 11.76f }           // (J/K) Heat block heat capacities.
+  #define MPC_SENSOR_RESPONSIVENESS { 0.1115f }         // (K/s per ∆K) Rate of change of sensor temperature from heat block.
+  #define MPC_AMBIENT_XFER_COEFF { 0.0745f }           // (W/K) Heat transfer coefficients from heat block to room air with fan off.
   #if ENABLED(MPC_INCLUDE_FAN)
-    #define MPC_AMBIENT_XFER_COEFF_FAN255 { 0.1215f }  // (W/K) Heat transfer coefficients from heat block to room air with fan on full.
+    #define MPC_AMBIENT_XFER_COEFF_FAN255 { 0.1267f }  // (W/K) Heat transfer coefficients from heat block to room air with fan on full.
   #endif
 
   // For one fan and multiple hotends MPC needs to know how to apply the fan cooling effect.
@@ -1296,7 +1305,9 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.63, 1599.17, 148.24 }
+// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.63, 1599.17, 148.24 } // 0.4mm brass nozzle
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.63, 1599.17, 145.76 } // 0.2mm brass nozzle
+
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
  */
@@ -1641,7 +1652,8 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.88 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed
+//#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.88 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed - 0.4mm brass nozzle
+#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.67 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed - 0.2mm brass nozzle
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
 #ifdef PROBING_TOOL
