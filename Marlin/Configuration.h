@@ -1346,9 +1346,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          800    // X, Y, Z ... and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          400    // X, Y, Z ... and E acceleration for printing moves - Calib 0.02mm brass nozzle w PLA+ at 25mm/s
 #define DEFAULT_RETRACT_ACCELERATION  2000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z ... acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   400    // X, Y, Z ... acceleration for travel (non printing) moves  - Calib 0.02mm brass nozzle w PLA+ at 25mm/s
 
 /**
  * Default Jerk limits (mm/s)
@@ -1387,7 +1387,7 @@
  *   https://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-  #define JUNCTION_DEVIATION_MM 0.008 // (mm) Distance from real junction edge
+  #define JUNCTION_DEVIATION_MM 0.03 // (mm) Distance from real junction edge  - Calib 0.02mm brass nozzle w PLA+ at 25mm/s
   #define JD_HANDLE_SMALL_SEGMENTS    // Use curvature estimation instead of just the junction angle
                                       // for small segments (< 1mm) with large junction angles (> 135°).
 #endif
