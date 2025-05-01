@@ -2341,7 +2341,7 @@
     #define ADVANCE_K { 0.22 }    // (mm) Compression length per 1mm/s extruder speed, per extruder
   #else
     // #define ADVANCE_K 0.57f        // (mm) Compression length applying to all extruders - eSUN PLA+ White Tuning at 215degC 0.4mm brass nozzle
-    #define ADVANCE_K 0.58f        // (mm) Compression length applying to all extruders - eSUN PLA+ White Tuning at 215degC 0.2mm brass nozzle
+    #define ADVANCE_K 1.2f        // (mm) Compression length applying to all extruders - eSUN PLA+ White Tuning at 215degC 0.2mm brass nozzle
   #endif
   //#define ADVANCE_K_EXTRA       // Add a second linear advance constant, configurable with M900 L.
   //#define LA_DEBUG              // Print debug information to serial during operation. Disable for production use.
