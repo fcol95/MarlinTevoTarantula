@@ -1306,7 +1306,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.63, 1599.17, 148.24 } // 0.4mm brass nozzle
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.73, 79.63, 1599.17, 145.76 } // 0.2mm brass nozzle
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.33, 80.35, 1599.17, 145.76 } // 0.2mm brass nozzle
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
