@@ -1653,7 +1653,7 @@
  *     O-- FRONT --+
  */
 //#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.88 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed - 0.4mm brass nozzle
-#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.53 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed - 0.2mm brass nozzle
+#define NOZZLE_TO_PROBE_OFFSET { 39, -45, -0.65 } // Based on LPA Fanduct V5 for Tarantula Positioning of SN04-N Sensor and new magnetic bed - 0.2mm brass nozzle
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
 #ifdef PROBING_TOOL
