@@ -20,6 +20,9 @@ Config for stock printer with MKS Gen 1.4 controller with following modification
 Inspiration from https://github.com/raphaelbruno/marlin-firmware-configuration/tree/master configuration, with his modifications removed and some settings ajusted to work with standard Tarantula.
 Inspiration and confirmation of Raphael's config done with Jim Brown's Marlin bugfix 2.0.x config (MarlinTarantula-EasyConfig-2.0.x). 
 
+TODO:
+Check if could replace LIN_ADVANCE with SMOOTH_LIN_ADVANCE.
+
 Original Marlin's readme below:
 
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
